@@ -1,21 +1,21 @@
 # Blork Studios Website
 
-Responsive multi-page static website for Blork Studios.
+A responsive, multi-page static website for Blork Studios, focused on its first game, **Art of War: Rising Sun**.
 
 ## Pages
-- Home: `index.html`
-- Art of War: Rising Sun: `games/art-of-war.html`
-- Portal Music: `apps/portal-music.html`
-- About and Contact
-- Privacy Policy and Terms of Use
+- `index.html` — studio homepage
+- `games/art-of-war.html` — game overview and screenshot gallery
+- `about.html` — studio background
+- `contact.html` — direct email and social links
+- `privacy.html` — website privacy policy
+- `terms.html` — website terms of use
 
 ## Publishing
-The site is designed for static hosting such as GitHub Pages. To publish with GitHub Pages, open repository Settings → Pages and configure deployment from the `main` branch and repository root.
+Designed for static hosting such as GitHub Pages. Configure repository Settings → Pages to deploy from the `main` branch and repository root.
 
 ## Before public launch
-- Add a dedicated studio email address to the Contact page and legal pages if you want email-based inquiries.
-- Confirm the final production domain, then add canonical URLs, a sitemap, and domain-specific social metadata.
-- Review the privacy policy against the actual hosting configuration and update it if analytics, forms, embedded content, ads, or other data collection is introduced.
-- Have a qualified attorney review the legal templates and any separate game/app licenses.
+- Confirm the production domain and add canonical URLs and a sitemap.
+- Review the privacy policy against the actual hosting configuration.
+- Have a qualified attorney review the legal templates and prepare a separate game EULA / end-user terms if needed for distribution.
 
-The legal pages are general informational templates, not legal advice.
+Legal pages are general informational templates, not legal advice.
