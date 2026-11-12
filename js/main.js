@@ -31,6 +31,17 @@ document.addEventListener('DOMContentLoaded', () => {
         menuToggle.textContent = '☰';
       }
     });
+
+    // Close menu when clicking a link inside nav
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (nav.classList.contains('open')) {
+          nav.classList.remove('open');
+          menuToggle.setAttribute('aria-expanded', false);
+          menuToggle.textContent = '☰';
+        }
+      });
+    });
   }
 
   // ------------------------------------------------------------------------
