@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Blork Studios — Independent Game Studio | Art of War: Setting Sun</title>
-  <meta name="description" content="Blork Studios is a solo independent game studio by Philip Gonzales, creating Art of War: Setting Sun — a sci-fi FPS MMO across a sprawling retro galaxy.">
-  <meta property="og:title" content="Blork Studios — We Make Weird Worlds">
-  <meta property="og:description" content="Independent games. Unusual worlds. Made with a llittle bit of random b******t.">
-  <meta property="og:image" content="images/blork%20games/blork-itch-banner_1920x600.png">
+  <title>Art of War: Setting Sun | Blork Studios</title>
+  <meta name="description" content="Art of War: Setting Sun is a retro sci-fi FPS space MMO from Blork Studios. Fight, fly your own ship between 17 worlds, pick the badge or the black market, and get dragged into the weirdest quests in the galaxy.">
+  <meta property="og:title" content="Art of War: Setting Sun | Blork Studios">
+  <meta property="og:description" content="Wake up with a robot in your head. Steal back the sky. A retro sci-fi FPS space MMO across 17 worlds.">
+  <meta property="og:image" content="images/game/hero-giant.jpg">
   <meta name="theme-color" content="#080a0f">
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,6 @@
   <script defer src="js/main.js"></script>
 </head>
 <body>
-  <!-- CRT Scanline Noise Overlay for authentic static aesthetic -->
   <div class="crt-overlay" aria-hidden="true"></div>
 
   <!-- Header & Navigation -->
@@ -32,60 +31,346 @@
       </a>
       <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
       <nav>
-        <a class="active" href="index.html">Home</a>
-        <a href="#where-to-play">Where to Play</a>
-        <a href="#the-game">The Game</a>
-        <a href="#factions">Factions</a>
+        <a class="active" href="#top">The Game</a>
+        <a href="#what-you-do">What You Do</a>
+        <a href="#worlds">Worlds</a>
         <a href="#screenshots">Screenshots</a>
-        <a href="#galaxy">The Galaxy</a>
-        <a href="#crew">Characters</a>
-        <a href="#manifesto">Studio</a>
-        <a href="#contact">Contact</a>
+        <a href="#studio">Studio</a>
+        <a href="#where-to-play" class="nav-cta">Play &amp; Follow</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-backdrop"></div>
-      <div class="wrap hero-content">
-        <p class="eyebrow">(•) INDEPENDENT GAME STUDIO • IN ACTIVE DEVELOPMENT</p>
-        <h1>WE MAKE<br><em>WEIRD WORLDS.</em></h1>
-        <p class="hero-copy">
-          Blork Studios is a solo independent game studio by <strong>Philip Gonzales</strong>.
-          Building big, idiosyncratic sci-fi adventures with heart, humor, and a little bit of random b******t.
-          Currently forging our debut sci-fi FPS MMO: <strong>Art of War: Setting Sun</strong>.
+  <main id="top">
+    <!-- HERO: the game first -->
+    <section class="game-hero">
+      <div class="game-hero-bg" aria-hidden="true"></div>
+      <div class="wrap game-hero-content">
+        <p class="eyebrow">(•) A RETRO SCI-FI FPS SPACE MMO • IN ACTIVE DEVELOPMENT</p>
+        <h1>ART OF WAR:<br><em>SETTING SUN</em></h1>
+        <p class="game-hero-hook">
+          You wake up in apartment 1C with a robot head wired into your brain.
+          A warlord is putting out the lights on 17 worlds.
+          You have a busted old transport, a blaster, and absolutely no plan.
         </p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="https://blork-studios.itch.io/art-of-war-setting-sun" target="_blank" rel="noopener">FOLLOW DEVLOG ON ITCH.IO ↗</a>
-          <a class="btn btn-secondary" href="#where-to-play">WHERE TO PLAY ↓</a>
+          <a class="btn btn-primary" href="https://blork-studios.itch.io/art-of-war-setting-sun" target="_blank" rel="noopener">FOLLOW ON ITCH.IO ↗</a>
+          <a class="btn btn-secondary" href="#what-you-do">SEE WHAT YOU CAN DO ↓</a>
+        </div>
+        <ul class="hero-stats">
+          <li><strong>17</strong><span>worlds to land on</span></li>
+          <li><strong>66+</strong><span>creatures &amp; bots</span></li>
+          <li><strong>1</strong><span>ship that's your home</span></li>
+          <li><strong>0</strong><span>installs, it runs in your browser</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Origin strip -->
+    <section class="origin-strip">
+      <div class="wrap origin-inner">
+        <p class="eyebrow">WHERE IT CAME FROM</p>
+        <p class="origin-text">
+          Every gun, alien, planet and boss started as a doodle in two high school notebooks.
+          Now those notebooks are a game you can play.
+        </p>
+      </div>
+    </section>
+
+    <!-- WHAT YOU DO -->
+    <section class="section-padding wrap" id="what-you-do">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">01 / WHAT YOU DO</p>
+          <h2>FIGHT. FLY.<br><em>GET WEIRD.</em></h2>
+        </div>
+        <p>
+          Think RuneScape's progression, Skyrim's wandering and Destiny's gunplay, rendered like a lost PS1 disc.
+          Every shot below is straight out of the current build.
+        </p>
+      </div>
+
+      <!-- 1. Fight -->
+      <article class="feature-row">
+        <div class="feature-media">
+          <img class="feature-main" src="images/game/fight-brawler-slam.jpg" alt="An alien brawler raises his club while a red ground-slam circle spreads under him" loading="lazy">
+          <div class="feature-thumbs">
+            <img src="images/game/fight-gunner-charge.jpg" alt="A gunner charging a red blast lane down the road" loading="lazy">
+            <img src="images/game/fight-mech-cockpit.jpg" alt="Twin miniguns firing from inside a battle mech" loading="lazy">
+          </div>
+        </div>
+        <div class="feature-copy">
+          <span class="feature-num">01 / FIGHT</span>
+          <h3>Read the red. Or eat it.</h3>
+          <p>
+            Enemies telegraph everything. Gunners paint a lane before the blast, brawlers light up the ground before the slam,
+            and beast packs circle while one pounces. Dodge, punish, and loot a weapon ladder that runs from Lvl 1 blaster to Lvl 100 heavy.
+          </p>
+          <p>
+            When on foot isn't enough, pull a Battle Car, Tank or Mech out of Fort Ironrock and hold the trigger.
+          </p>
+          <div class="feature-pill-list">
+            <span class="feature-pill">Blasters to laser swords</span>
+            <span class="feature-pill">Wizard staffs</span>
+            <span class="feature-pill">Battle mechs</span>
+            <span class="feature-pill">Boss intros</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2. Fly -->
+      <article class="feature-row flip">
+        <div class="feature-media">
+          <img class="feature-main" src="images/game/fly-cockpit-earth.jpg" alt="Cockpit view of the Setting Sun with Earth filling the windshield" loading="lazy">
+          <div class="feature-thumbs">
+            <img src="images/game/fly-landing.jpg" alt="The ship hovering over a glowing landing pad with thrusters firing" loading="lazy">
+            <img src="images/game/fly-ocean-pad.jpg" alt="The ship parked on a lit pad on an Ocean World island at night" loading="lazy">
+          </div>
+        </div>
+        <div class="feature-copy">
+          <span class="feature-num">02 / FLY</span>
+          <h3>Your ship is your house.</h3>
+          <p>
+            The <em>Setting Sun</em> is a battered transport you live in. Walk to the helm, take off through the atmosphere,
+            flip to cockpit view, scan the star charts and set her down on a landing pad on the next world.
+          </p>
+          <p>
+            Dogfight raiders, dock with pirate ships and clear them room by room, then go home and add a gun range, a fish tank or a very illegal lab.
+          </p>
+          <div class="feature-pill-list">
+            <span class="feature-pill">Takeoff &amp; landing</span>
+            <span class="feature-pill">Cockpit view</span>
+            <span class="feature-pill">Ship boarding</span>
+            <span class="feature-pill">Rooms you build</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3. Arena -->
+      <article class="feature-row">
+        <div class="feature-media">
+          <img class="feature-main" src="images/game/arena-crowd.jpg" alt="Walking out of the tunnel into Arena Prime with a packed crowd in the stands" loading="lazy">
+          <div class="feature-thumbs">
+            <img src="images/game/arena-stadium-front.jpg" alt="The front of the Arena Prime stadium" loading="lazy">
+            <img src="images/game/arena-from-above.jpg" alt="Arena Prime from the air" loading="lazy">
+          </div>
+        </div>
+        <div class="feature-copy">
+          <span class="feature-num">03 / ARENA PRIME</span>
+          <h3>Thousands watching. No pressure.</h3>
+          <p>
+            Grab a snack at the food stalls, walk out of the tunnel and fight wave after wave while the stadium gets louder.
+            Bet on bouts, take on bosses, or go head to head with other players.
+          </p>
+          <div class="feature-pill-list">
+            <span class="feature-pill">PvE waves</span>
+            <span class="feature-pill">PvP</span>
+            <span class="feature-pill">Betting</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4. Badge or black market -->
+      <article class="feature-row flip">
+        <div class="feature-media">
+          <img class="feature-main" src="images/game/outlaw-npcs.jpg" alt="Townsfolk at night using pills, a vape, a bong and an inhaler" loading="lazy">
+          <div class="feature-thumbs">
+            <img src="images/game/outlaw-boutique.jpg" alt="Melting ingredients into a bowl at the Boutique bench" loading="lazy">
+            <img src="images/game/outlaw-cell.jpg" alt="A holding cell and the evidence locker in the Marshal office" loading="lazy">
+          </div>
+        </div>
+        <div class="feature-copy">
+          <span class="feature-num">04 / CHOOSE A SIDE</span>
+          <h3>The badge, or the black market.</h3>
+          <p>
+            <strong>Marshals</strong> work for Marshal Rook: bounties, busts, holding cells and an evidence locker full of other people's stash.
+          </p>
+          <p>
+            <strong>Outlaws</strong> build a lab on the ship, cook their own product, hire crew, run street dealers and keep one eye on their heat.
+            You can't do both. Choose carefully.
+          </p>
+          <div class="faction-mini">
+            <span class="faction-chip law">LAW • ZERO TOLERANCE</span>
+            <span class="faction-chip outlaw">OUTLAW • HEAT &amp; RISK</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 5. The weird stuff -->
+      <div class="weird-block">
+        <div class="weird-head">
+          <span class="feature-num">05 / THE WEIRD STUFF</span>
+          <h3>The quests are where it gets <em>strange</em>.</h3>
+          <p>Somewhere between the warlord and the final boss, you'll do all of this.</p>
+        </div>
+        <div class="weird-grid">
+          <figure class="weird-card big">
+            <img src="images/game/weird-hot-goss.jpg" alt="Hot Goss news broadcast: Flerk Nerk wins Arena Prime's Got Pipes" loading="lazy">
+            <figcaption><strong>I Got Pipes</strong>Coach a washed-up singer back to the top of Arena Prime's talent show.</figcaption>
+          </figure>
+          <figure class="weird-card">
+            <img src="images/game/weird-king-blorbo.jpg" alt="King Blorbo, a tiny crowned emperor, standing in a dumpster" loading="lazy">
+            <figcaption><strong>The King of Nothing</strong>Serve the emperor of a dumpster in Zone 7.</figcaption>
+          </figure>
+          <figure class="weird-card">
+            <img src="images/game/weird-wedding.jpg" alt="A pink chapel wedding about to go wrong" loading="lazy">
+            <figcaption><strong>The Wedding</strong>Speak now, or forever hold your peace. Somebody won't.</figcaption>
+          </figure>
+          <figure class="weird-card">
+            <img src="images/game/weird-flerk-court.jpg" alt="Courtroom title card: The People v. Flerk Nerk" loading="lazy">
+            <figcaption><strong>The People v. Flerk Nerk</strong>Take the stand in a real courtroom trial.</figcaption>
+          </figure>
+          <figure class="weird-card">
+            <img src="images/game/weird-hydrans.jpg" alt="A crowd of jellyfish-like Hydrans cheering THANK YOU" loading="lazy">
+            <figcaption><strong>The Time Portal</strong>Eleven million Hydrans cheer at once. It sounds like a kettle.</figcaption>
+          </figure>
         </div>
       </div>
     </section>
 
-    <!-- Studio Banner Showcase -->
-    <section class="studio-banner-section wrap">
-      <div class="studio-banner-frame">
-        <img src="images/blork%20games/blork-itch-banner_1920x600.png" alt="Blork Studios Official Itch Banner">
-        <div class="studio-banner-tag">(•) OFFICIAL BLORK STUDIOS TRANSMISSION</div>
+    <!-- OFF THE CLOCK -->
+    <section class="section-padding wrap offclock">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">02 / OFF THE CLOCK</p>
+          <h2>WHEN YOU'RE NOT<br><em>SAVING THE GALAXY.</em></h2>
+        </div>
+        <p>Fish ten kinds of alien fish, race hover cars on Velocity, lose your credits at the slots, dance at the Starlight Lounge, date the regulars, decorate your ship.</p>
+      </div>
+      <div class="tile-row">
+        <figure class="tile"><img src="images/game/life-arcade.jpg" alt="Kids playing at the neon arcade" loading="lazy"><figcaption>The Neon Arcade</figcaption></figure>
+        <figure class="tile"><img src="images/game/life-casino.jpg" alt="Rows of slot machines at the casino" loading="lazy"><figcaption>The Lucky Asteroid</figcaption></figure>
+        <figure class="tile"><img src="images/game/life-bike.jpg" alt="A speed bike parked on the dirt" loading="lazy"><figcaption>Speed bikes</figcaption></figure>
+        <figure class="tile"><img src="images/screenshots/07-fishing-fern-pond.png" alt="Fishing at Fern Pond with the Frost Rod" loading="lazy"><figcaption>Alien fishing</figcaption></figure>
       </div>
     </section>
 
-    <!-- Where to Play Section -->
+    <!-- WORLDS -->
+    <section class="section-padding wrap" id="worlds">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">03 / THE GALAXY</p>
+          <h2>17 WORLDS.<br><em>ONE SHARED SKY.</em></h2>
+        </div>
+        <p>Every world has its own people, quests, monsters, music and secrets, and other players are out there with you.</p>
+      </div>
+
+      <div class="worlds-showcase">
+        <figure class="world-shot big">
+          <img src="images/game/world-floating-city-night.jpg" alt="The Floating City towers lit up at night in Earth Sky" loading="lazy">
+          <figcaption><span>EARTH SKY</span>The Floating City</figcaption>
+        </figure>
+        <figure class="world-shot">
+          <img src="images/game/world-zeltac-plaza.jpg" alt="The neon Plaza mall inside the Zeltac city ship" loading="lazy">
+          <figcaption><span>THE ZELTAC</span>A city that flies</figcaption>
+        </figure>
+        <figure class="world-shot">
+          <img src="images/game/world-waterfall.jpg" alt="A floating island with a waterfall pouring off its edge" loading="lazy">
+          <figcaption><span>EARTH SKY</span>Drifting islands</figcaption>
+        </figure>
+        <figure class="world-shot">
+          <img src="images/game/world-capitone-snow.jpg" alt="Snowy frozen plains on Capitone at dusk" loading="lazy">
+          <figcaption><span>CAPITONE</span>The Frozen Plains</figcaption>
+        </figure>
+        <figure class="world-shot">
+          <img src="images/game/world-wrist-map.jpg" alt="A holographic galaxy map projected from the player's wrist" loading="lazy">
+          <figcaption><span>YOUR WRIST</span>The galaxy map</figcaption>
+        </figure>
+      </div>
+
+      <div class="worlds-grid compact">
+        <div class="world-card"><span class="world-num">EARTH</span><h3>New Jamestown</h3><p>Walled capital, the Roxy cinema, Cookie's Diner and your apartment.</p></div>
+        <div class="world-card"><span class="world-num">MEZAR</span><h3>Bug City</h3><p>Honey-amber desert, beehive towers and a PvP sand dome.</p></div>
+        <div class="world-card"><span class="world-num">CAPITONE</span><h3>Frozen forests</h3><p>Mountain of the Lost and the Volcano Forge dungeon.</p></div>
+        <div class="world-card"><span class="world-num">ROBOT CITY</span><h3>Tower of Death</h3><p>Neon wastes and Ada-9's synth resistance.</p></div>
+        <div class="world-card"><span class="world-num">OCEAN WORLD</span><h3>Bubble City</h3><p>Port Kelp piers, underwater domes and the Leviathan.</p></div>
+        <div class="world-card"><span class="world-num">VELOCITY</span><h3>Storm racing</h3><p>Hover cars under rainbow lightning.</p></div>
+        <div class="world-card"><span class="world-num">THE MOON</span><h3>Lunaland</h3><p>A haunted amusement park and Rocket Rex's sky show.</p></div>
+        <div class="world-card"><span class="world-num">VECTOR</span><h3>The Greater Maw</h3><p>Past the edge of the map, something opens its eye.</p></div>
+      </div>
+    </section>
+
+    <!-- SCREENSHOTS -->
+    <section class="section-padding wrap" id="screenshots">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">04 / SCREENSHOTS</p>
+          <h2>STRAIGHT FROM<br><em>THE BUILD.</em></h2>
+        </div>
+        <p>No mockups. Tap any shot to see it full size.</p>
+      </div>
+
+      <div class="gallery-filter">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="combat">Combat</button>
+        <button class="filter-btn" data-category="space">Ships &amp; Space</button>
+        <button class="filter-btn" data-category="worlds">Worlds</button>
+        <button class="filter-btn" data-category="weird">Quests &amp; Weirdness</button>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item wide" data-category="combat">
+          <img src="images/game/fight-beast-pack.jpg" alt="A pack of beasts circling while one pounces" loading="lazy">
+          <div class="gallery-caption">EARTH OUTSKIRTS <span>The pack waits while one pounces</span></div>
+        </div>
+        <div class="gallery-item" data-category="combat">
+          <img src="images/game/fight-car-mech.jpg" alt="Battle Car and Battle Mech at Fort Ironrock" loading="lazy">
+          <div class="gallery-caption">FORT IRONROCK <span>Battle Car and Battle Mech</span></div>
+        </div>
+        <div class="gallery-item" data-category="space">
+          <img src="images/game/fly-ship-earth.jpg" alt="The Setting Sun flying past Earth" loading="lazy">
+          <div class="gallery-caption">OPEN SPACE <span>The Setting Sun over Earth</span></div>
+        </div>
+        <div class="gallery-item wide" data-category="worlds">
+          <img src="images/game/world-sky-airbase.jpg" alt="Air Base One on a floating island" loading="lazy">
+          <div class="gallery-caption">EARTH SKY <span>Air Base One</span></div>
+        </div>
+        <div class="gallery-item" data-category="weird">
+          <img src="images/game/weird-emerald-buzzer.jpg" alt="The Arena Prime's Got Pipes stage" loading="lazy">
+          <div class="gallery-caption">I GOT PIPES <span>The emerald buzzer</span></div>
+        </div>
+        <div class="gallery-item wide" data-category="space">
+          <img src="images/screenshots/02-cockpit-star-charts.png" alt="Cockpit view scanning Ocean World with the star charts" loading="lazy">
+          <div class="gallery-caption">COCKPIT VIEW <span>Scanning the star charts</span></div>
+        </div>
+        <div class="gallery-item" data-category="combat">
+          <img src="images/screenshots/01-mezar-spore-bloat.png" alt="Fighting Spore Bloats on Mezar" loading="lazy">
+          <div class="gallery-caption">MEZAR <span>Spore Bloats</span></div>
+        </div>
+        <div class="gallery-item" data-category="weird">
+          <img src="images/game/rex-launch.jpg" alt="Rocket Rex on his launch tower at night" loading="lazy">
+          <div class="gallery-caption">LUNALAND <span>Rocket Rex, star of the sky show</span></div>
+        </div>
+        <div class="gallery-item" data-category="weird">
+          <img src="images/game/weird-dino.jpg" alt="A dinosaur looking up at the sky 18 billion years ago" loading="lazy">
+          <div class="gallery-caption">THE TIME PORTAL <span>Earth, a very long time ago</span></div>
+        </div>
+        <div class="gallery-item" data-category="worlds">
+          <img src="images/screenshots/09-bubble-city-coral-heights.png" alt="Talking to Derk in a Coral Heights apartment" loading="lazy">
+          <div class="gallery-caption">BUBBLE CITY <span>Coral Heights</span></div>
+        </div>
+        <div class="gallery-item" data-category="combat">
+          <img src="images/screenshots/06-alien-spearman-encounter.png" alt="An Alien Spearman with a shield in the rain" loading="lazy">
+          <div class="gallery-caption">FIRST CONTACT <span>Alien Spearman</span></div>
+        </div>
+        <div class="gallery-item" data-category="worlds">
+          <img src="images/game/arena-from-above.jpg" alt="Arena Prime from above" loading="lazy">
+          <div class="gallery-caption">ARENA PRIME <span>From the air</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHERE TO PLAY -->
     <section class="section-padding wrap" id="where-to-play">
       <div class="section-header">
         <div>
-          <p class="eyebrow">01 / LAUNCH PLATFORMS &amp; DEVLOG</p>
-          <h2>WHERE TO<br><em>PLAY &amp; FOLLOW.</em></h2>
+          <p class="eyebrow">05 / PLAY &amp; FOLLOW</p>
+          <h2>GET IN<br><em>EARLY.</em></h2>
         </div>
-        <p>
-          Follow development on Itch.io for devlogs and playtest announcements. Steam and Google Play releases are currently in active preparation.
-        </p>
+        <p>Follow the devlog on itch.io for patch notes and playtest drops. Steam and Google Play are on the way.</p>
       </div>
 
       <div class="platform-grid">
-        <!-- Itch.io (Active Live Link to Devlog) -->
         <article class="platform-card active">
           <div>
             <div class="platform-header">
@@ -93,20 +378,12 @@
               <span class="platform-status live">DEVLOG ACTIVE</span>
             </div>
             <div class="platform-body">
-              <h3>Itch.io Devlog</h3>
-              <p>
-                Follow development logs, inspect version patch notes, view behind-the-scenes mechanics, and be first in line when public test builds go live.
-              </p>
+              <h3>itch.io</h3>
+              <p>Devlogs, patch notes, behind-the-scenes, and first word when public test builds go live.</p>
             </div>
           </div>
-          <div>
-            <a class="btn btn-primary" style="width: 100%;" href="https://blork-studios.itch.io/art-of-war-setting-sun" target="_blank" rel="noopener">
-              FOLLOW ON ITCH.IO ↗
-            </a>
-          </div>
+          <a class="btn btn-primary" style="width: 100%;" href="https://blork-studios.itch.io/art-of-war-setting-sun" target="_blank" rel="noopener">FOLLOW ON ITCH.IO ↗</a>
         </article>
-
-        <!-- Steam (Coming Soon / Greyed Out) -->
         <article class="platform-card disabled">
           <div>
             <div class="platform-header">
@@ -115,19 +392,11 @@
             </div>
             <div class="platform-body">
               <h3>Steam</h3>
-              <p>
-                Desktop Steam release featuring native achievements, cloud backup, and community discussions. Store page currently in preparation.
-              </p>
+              <p>Desktop release with achievements and cloud saves. Store page in preparation.</p>
             </div>
           </div>
-          <div>
-            <span class="btn btn-disabled" style="width: 100%;">
-              WISHLIST ON STEAM (SOON)
-            </span>
-          </div>
+          <span class="btn btn-disabled" style="width: 100%;">WISHLIST ON STEAM (SOON)</span>
         </article>
-
-        <!-- Google Play Store (Coming Soon / Greyed Out) -->
         <article class="platform-card disabled">
           <div>
             <div class="platform-header">
@@ -135,428 +404,60 @@
               <span class="platform-status soon">COMING SOON</span>
             </div>
             <div class="platform-body">
-              <h3>Google Play Store</h3>
-              <p>
-                Android release tailored for touch controls, phone HUD 2.0, and exploring the galaxy on mobile devices. Coming soon to Google Play.
-              </p>
+              <h3>Google Play</h3>
+              <p>Built for touch from day one, with a full phone HUD. Coming to Android.</p>
             </div>
           </div>
-          <div>
-            <span class="btn btn-disabled" style="width: 100%;">
-              GOOGLE PLAY (SOON)
-            </span>
-          </div>
+          <span class="btn btn-disabled" style="width: 100%;">GOOGLE PLAY (SOON)</span>
         </article>
       </div>
     </section>
 
-    <!-- The Game: Art of War: Setting Sun -->
-    <section class="section-padding wrap" id="the-game">
-      <div class="section-header">
-        <div>
-          <p class="eyebrow">02 / FLAGSHIP TITLE</p>
-          <h2>ART OF WAR:<br><em>SETTING SUN</em></h2>
-        </div>
-        <p>
-          A sci-fi first-person shooter MMORPG in one shared galaxy.
-          Think <strong>RuneScape's progression + Skyrim's exploration + Destiny's gunplay &amp; loot</strong>, wrapped in a stylized retro PS1 aesthetic.
-        </p>
-      </div>
-
-      <!-- Spotlight Card -->
-      <div class="game-card-spotlight">
-        <div class="spotlight-media">
-          <img src="images/screenshots/03-spaceflight-moon-approach.png" alt="Flying the Setting Sun starship in open space">
-          <span class="media-tag">RETRO PS1 FPS MMO • LIVE BUILDS</span>
-        </div>
-        <div class="spotlight-content">
-          <p class="eyebrow">YOUR SHIP IS YOUR HOME BASE</p>
-          <h2>THE SETTING SUN AWAITS.</h2>
-          <p>
-            You start in apartment 1C on Earth, transplant a snarky robot head named <strong>B.U.R.P.</strong> into your brain, and take the helm of a battered transport called the <em>Setting Sun</em>.
-            Expand your ship room by room — bridge, quarters, armory, drug lab, trophy hall, and vehicle bay — as you launch between 17+ planets with takeoff sequence transitions into open space.
-          </p>
-          
-          <!-- B.U.R.P. Dialogue Box -->
-          <div class="burp-quote-box">
-            <strong>B.U.R.P. Neural AI:</strong> "Testing sound transplant. Yup I can hear your thoughts and see what you see... remember that when you use the toilet please."
-          </div>
-
-          <div class="feature-pill-list">
-            <span class="feature-pill">FPS + Spaceflight</span>
-            <span class="feature-pill">17+ Landable Worlds</span>
-            <span class="feature-pill">Deep Alien Fishing</span>
-            <span class="feature-pill">4 Legendary Masters</span>
-            <span class="feature-pill">Vehicle &amp; Mech Combat</span>
-            <span class="feature-pill">Shared Online Galaxy</span>
-          </div>
-          <div>
-            <a class="btn btn-primary" href="#screenshots">INSPECT GAMEPLAY DISPATCHES →</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Gameplay Systems Grid -->
-    <section class="section-padding wrap">
-      <div class="section-header">
-        <div>
-          <p class="eyebrow">02 / CORE GAMEPLAY PILLARS</p>
-          <h2>BUILT FOR<br><em>EXPLORATION &amp; COMBAT.</em></h2>
-        </div>
-        <p>From tactical FPS firefights and deep-space dogfights to alien pond fishing and underground poker dens.</p>
-      </div>
-
-      <div class="character-grid pillars">
-        <article class="character-card">
-          <div class="character-info">
-            <span class="character-role">Pillar 01</span>
-            <h3>FPS Gunplay &amp; Loot</h3>
-            <p>Full 1-100 tier weapon ladder (blasters, SMGs, heavy rifles, laser swords, wizard staffs) with gun mods, elemental ammo, and signature Master gear.</p>
-          </div>
-        </article>
-        <article class="character-card">
-          <div class="character-info">
-            <span class="character-role">Pillar 02</span>
-            <h3>Spaceflight &amp; Takeoff</h3>
-            <p>Board your cockpit, launch through the planetary takeoff sequence loading screen, scan orbital star charts, dogfight raiders, and board drifting derelict freighters.</p>
-          </div>
-        </article>
-        <article class="character-card">
-          <div class="character-info">
-            <span class="character-role">Pillar 03</span>
-            <h3>Deep Life &amp; Economy</h3>
-            <p>Safe hubs with clinics, banks, and pawn shops. Catch 10+ species of alien fish, race hover cars on Velocity, or craft substances in your ship's illicit lab.</p>
-          </div>
-        </article>
-        <article class="character-card">
-          <div class="character-info">
-            <span class="character-role">Pillar 04</span>
-            <h3>The Warlord Drome</h3>
-            <p>Battle Drome's robot legions (XR-17s, hover-bots, riot droids) across rotating world raids, ending in an epic cosmic finale at the Greater Maw.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Outlaw System vs Galactic Marshal System -->
-    <section class="section-padding wrap" id="factions">
-      <div class="section-header">
-        <div>
-          <p class="eyebrow">03 / FACTION ALLEGIANCE</p>
-          <h2>THE LAW OR THE LAWLESS:<br><em>MARSHALS VS. OUTLAWS.</em></h2>
-        </div>
-        <p>
-          Your path diverges early in the galaxy. Choose to uphold order with the badge, or plunge into the lucrative criminal underworld.
-        </p>
-      </div>
-
-      <div class="faction-grid">
-        <!-- The Galactic Marshals -->
-        <article class="faction-card marshal">
-          <div>
-            <span class="faction-badge">THE BADGE • ORDER &amp; JUSTICE</span>
-            <h3>The Galactic Marshals</h3>
-            <p>
-              Enlist under Marshal Rook to uphold stellar law. Hunt down high-bounty targets, execute contraband busts, raid criminal smuggler ships, and gain full clearance to high-security assets.
-            </p>
-            <ul class="faction-perks">
-              <li>Official Marshal Rank &amp; Enforcer Badge</li>
-              <li>Marshal Office &amp; Station Wanted Boards</li>
-              <li>Access to Evidence Lockers &amp; High-Tech Armory</li>
-              <li>Contraband Seizures &amp; Suspect Holding Cells</li>
-            </ul>
-          </div>
-          <div style="border-top: 1px solid var(--border-subtle); padding-top: 18px; margin-top: 10px;">
-            <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-cyan); font-weight: 700;">LAW PATH • ZERO TOLERANCE</span>
-          </div>
-        </article>
-
-        <!-- The Outlaw System -->
-        <article class="faction-card outlaw">
-          <div>
-            <span class="faction-badge">THE BLACK MARKET • CRIME &amp; PROFIT</span>
-            <h3>The Outlaw System</h3>
-            <p>
-              Defy galactic authority. Install an illicit Chemistry Lab and Boutique Bench aboard the Setting Sun, refine custom substances, take underworld hits from the Don, and fence stolen goods.
-            </p>
-            <ul class="faction-perks">
-              <li>Ship Chemistry Lab &amp; Custom Substance Crafting</li>
-              <li>Black Market Fences &amp; Grub's Bar Hotbox Access</li>
-              <li>Syndicate Contracts &amp; Hits from the Don</li>
-              <li>Reputation Tiers from Clean to Most Wanted</li>
-            </ul>
-          </div>
-          <div style="border-top: 1px solid var(--border-subtle); padding-top: 18px; margin-top: 10px;">
-            <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-pink); font-weight: 700;">OUTLAW PATH • HEAT &amp; RISK</span>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Screenshots Gallery (Real In-Game Builds) -->
-    <section class="section-padding wrap" id="screenshots">
-      <div class="section-header">
-        <div>
-          <p class="eyebrow">04 / FIELD DISPATCHES</p>
-          <h2>IN-GAME<br><em>SCREENSHOT GALLERY.</em></h2>
-        </div>
-        <p>Direct captures from current gameplay builds of <em>Art of War: Setting Sun</em>. Select any screenshot to examine in full resolution.</p>
-      </div>
-
-      <!-- Filter Controls -->
-      <div class="gallery-filter">
-        <button class="filter-btn active" data-category="all">All Dispatches (9)</button>
-        <button class="filter-btn" data-category="space">Space &amp; Flight</button>
-        <button class="filter-btn" data-category="combat">FPS Combat</button>
-        <button class="filter-btn" data-category="hubs">Hubs &amp; Life</button>
-      </div>
-
-      <!-- Grid of User's Actual Game Screenshots -->
-      <div class="gallery-grid">
-        <div class="gallery-item wide" data-category="space">
-          <img src="images/screenshots/02-cockpit-star-charts.png" alt="Cockpit View scanning Ocean World with Star Charts HUD">
-          <div class="gallery-caption">COCKPIT VIEW: STAR CHARTS <span>ORBITAL HUD 2.0</span></div>
-        </div>
-
-        <div class="gallery-item" data-category="combat">
-          <img src="images/screenshots/01-mezar-spore-bloat.png" alt="Fighting Level 44 Spore Bloats on Mezar">
-          <div class="gallery-caption">MEZAR: SPORE BLOATS <span>CHAPTER 2 LANDFALL</span></div>
-        </div>
-
-        <div class="gallery-item" data-category="space">
-          <img src="images/screenshots/03-spaceflight-moon-approach.png" alt="Flying the Setting Sun approaching Earth's Moon">
-          <div class="gallery-caption">OPEN SPACE FLIGHT <span>EARTH'S MOON &amp; MEZAR</span></div>
-        </div>
-
-        <div class="gallery-item" data-category="combat">
-          <img src="images/screenshots/04-earth-outskirts-blaster.png" alt="First person blaster combat targeting XR-17 robot">
-          <div class="gallery-caption">EARTH OUTSKIRTS <span>XR-17 TARGETING</span></div>
-        </div>
-
-        <div class="gallery-item" data-category="hubs">
-          <img src="images/screenshots/07-fishing-fern-pond.png" alt="Fishing minigame with Frost Rod at Fern Pond">
-          <div class="gallery-caption">FERN POND FISHING <span>FROST ROD TENSION</span></div>
-        </div>
-
-        <div class="gallery-item" data-category="combat">
-          <img src="images/screenshots/05-earth-wild-dogs-pack.png" alt="Pack of level 8 Wild Dogs ambushing on Earth">
-          <div class="gallery-caption">WILD DOG PACK <span>THREAT DETECTED</span></div>
-        </div>
-
-        <div class="gallery-item wide" data-category="hubs">
-          <img src="images/screenshots/08-underworld-grubs-bar-pawn.jpg" alt="Montage of Ship Lab, Cargo Bay COOK OR DIE, Grub's Bar, and Crabby's Pawn">
-          <div class="gallery-caption">THE UNDERWORLD <span>GRUB'S BAR &amp; BUBBLE CITY</span></div>
-        </div>
-
-        <div class="gallery-item" data-category="combat">
-          <img src="images/screenshots/06-alien-spearman-encounter.png" alt="Alien Spearman with shield in Earth outskirts rain">
-          <div class="gallery-caption">FIRST CONTACT <span>ALIEN SPEARMAN</span></div>
-        </div>
-
-        <div class="gallery-item" data-category="hubs">
-          <img src="images/screenshots/09-bubble-city-coral-heights.png" alt="Talking to Derk in Coral Heights underwater biodome apartment">
-          <div class="gallery-caption">BUBBLE CITY APARTMENT <span>CORAL HEIGHTS 20</span></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- The Galaxy of 17+ Worlds -->
-    <section class="section-padding wrap" id="galaxy">
-      <div class="section-header">
-        <div>
-          <p class="eyebrow">04 / THE GALAXY MAP</p>
-          <h2>17 WORLDS.<br><em>ONE SHARED UNIVERSE.</em></h2>
-        </div>
-        <p>Each planet offers its own distinct biomes, factions, storylines, radio stations, and secrets.</p>
-      </div>
-
-      <div class="worlds-grid">
-        <div class="world-card">
-          <span class="world-num">01 / HUB WORLD</span>
-          <h3>Earth &amp; New Jamestown</h3>
-          <p>Walled capital with Town Hall, the Roxy Cinema, Cookie's Diner, Jamestown Arms apartments, and Captain Vega's militia.</p>
-        </div>
-        <div class="world-card">
-          <span class="world-num">02 / RINGED WORLD</span>
-          <h3>Mezar</h3>
-          <p>Honey-amber desert world housing Bug City beehive towers, the Sand Dome Desert PvP zone, and the Bug Master.</p>
-        </div>
-        <div class="world-card">
-          <span class="world-num">03 / DEEP TEAL FOREST</span>
-          <h3>Capitone</h3>
-          <p>Frozen pines, the Mountain of the Lost, Volcano Forge dungeon, and the Cyclops knight Master Maxurge.</p>
-        </div>
-        <div class="world-card">
-          <span class="world-num">04 / NEON WASTES</span>
-          <h3>Robot City</h3>
-          <p>Tower of Death, robot graveyards, hover-car races, and Ada-9's underground synth resistance.</p>
-        </div>
-        <div class="world-card">
-          <span class="world-num">05 / FLYING METROPOLIS</span>
-          <h3>The Zeltac Ship</h3>
-          <p>A massive 20-floor city ship: Plaza shopping mall, Starlight Lounge romance hub, and Brakka's shipyard.</p>
-        </div>
-        <div class="world-card">
-          <span class="world-num">06 / UNDERWATER DOMES</span>
-          <h3>Ocean World</h3>
-          <p>Port Kelp piers, kayak rental, the Leviathan deep trench, and Bubble City's submerged biodomes.</p>
-        </div>
-        <div class="world-card">
-          <span class="world-num">07 / RACING PLANET</span>
-          <h3>Velocity</h3>
-          <p>Magnet storms and rainbow lightning. 8 hover-car chassis sprinting through canyon point-to-point circuits.</p>
-        </div>
-        <div class="world-card">
-          <span class="world-num">08 / THE EYE IN THE DARK</span>
-          <h3>Vector &amp; The Greater Maw</h3>
-          <p>Past the edge of the star charts, where cosmic anomalies distort reality and the final battle unfolds.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Crew & Characters -->
-    <section class="section-padding wrap" id="crew">
-      <div class="section-header">
-        <div>
-          <p class="eyebrow">06 / CHARACTERS &amp; MASTERS</p>
-          <h2>MEET THE<br><em>CHARACTERS.</em></h2>
-        </div>
-        <p>The universe is populated by unforgettable oddballs, formidable trainers, and snarky neural parasites.</p>
-      </div>
-
-      <div class="character-grid">
-        <article class="character-card">
-          <div class="character-thumb">
-            <img src="images/art%20of%20war%3A%20setting%20sun/1_blorbo.png" alt="Blorbo mascot creature">
-          </div>
-          <div class="character-info">
-            <span class="character-role">System Enigma</span>
-            <h3>Blorbo</h3>
-            <p>A strange, resilient creature that appears in the most impossible locations. Possesses zero fear and an aura of immense judgment.</p>
-          </div>
-        </article>
-
-        <article class="character-card">
-          <div class="character-thumb">
-            <img src="images/art%20of%20war%3A%20setting%20sun/12_seer_ixa.png" alt="Seer Ixa astral navigator">
-          </div>
-          <div class="character-info">
-            <span class="character-role">Astral Navigator</span>
-            <h3>Seer Ixa</h3>
-            <p>Attuned to deep space anomalies and forgotten stellar currents. Stocks high-tier energy weapons and cryptic navigational guidance.</p>
-          </div>
-        </article>
-
-        <article class="character-card">
-          <div class="character-thumb">
-            <img src="images/art%20of%20war%3A%20setting%20sun/07-ship-bay-brakka.png" alt="Brakka quartermaster in ship bay">
-          </div>
-          <div class="character-info">
-            <span class="character-role">Hangar Quartermaster</span>
-            <h3>Brakka</h3>
-            <p>Zeltac Shipwright who can refit your starship's engines, wings, and weapon pods using dubiously scavenged scrap.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Studio Manifesto / Why Blork -->
-    <section class="manifesto-section section-padding" id="manifesto">
+    <!-- STUDIO -->
+    <section class="manifesto-section section-padding" id="studio">
       <div class="wrap manifesto-inner">
         <div class="mascot-container">
           <div class="mascot-glow"></div>
-          <img src="images/blork-logo.png" alt="Blork Studios Octopus Mascot">
+          <img src="images/blork-logo.png" alt="Blork Studios octopus mascot">
         </div>
         <div class="manifesto-text">
-          <p class="eyebrow">THE BLORK PHILOSOPHY</p>
-          <h2>NOT ANOTHER<br><em>COOKIE-CUTTER STUDIO.</em></h2>
+          <p class="eyebrow">THE STUDIO</p>
+          <h2>BLORK STUDIOS.<br><em>WE MAKE WEIRD WORLDS.</em></h2>
           <p>
-            Blork Studios was founded with one clear mission: games should have unmistakable personality. The worlds should surprise you, the people should stick with you, and the details should feel like somebody cared enough to make them weird in just the right way.
+            Blork Studios is a one-person indie studio run by <strong>Philip Gonzales</strong>.
+            Art of War started in high school, drawn by Phil and his buddy Caleb in the margins of class notebooks: the logo, the Masters, the guns, the bugs, the planets.
+            Blork is turning every page of it into a real game.
           </p>
           <p>
-            No algorithmic checklists. No sterile corporate templates. Just bold creative risks, retro PS1 aesthetic reverence, and original sci-fi games made with a little bit of random b******t.
+            No checklists and no corporate templates. Just big, strange sci-fi with heart, humour and a little bit of random b******t.
           </p>
-          <div class="studio-stats">
-            <div class="stat-item">
-              <h4>17+</h4>
-              <span>Landable Worlds</span>
-            </div>
-            <div class="stat-item">
-              <h4>66+</h4>
-              <span>Creatures &amp; Bots</span>
-            </div>
-            <div class="stat-item">
-              <h4>100%</h4>
-              <span>Indie Passion</span>
-            </div>
-            <div class="stat-item">
-              <h4>01</h4>
-              <span>Shared Galaxy</span>
-            </div>
-          </div>
+          <a class="btn btn-secondary" href="about.html">MORE ABOUT THE STUDIO →</a>
         </div>
       </div>
     </section>
 
-    <!-- Contact & Comms Section -->
+    <!-- CONTACT -->
     <section class="section-padding wrap" id="contact">
-      <div class="section-header">
-        <div>
-          <p class="eyebrow">06 / COMMUNICATIONS</p>
-          <h2>LET'S TALK.<br><em>NO SIGNAL FLARES NEEDED.</em></h2>
-        </div>
-        <p>Whether you're reaching out about publishing, press inquiries, streaming, or just want to discuss alien creatures, our comms array is open.</p>
-      </div>
-
       <div class="contact-card-wrap">
         <div class="contact-main-card">
-          <p class="eyebrow">DIRECT STUDIO DISPATCH</p>
-          <h2>TRANSMIT A MESSAGE</h2>
+          <p class="eyebrow">PRESS, CREATORS &amp; EVERYONE ELSE</p>
+          <h2>SEND A TRANSMISSION</h2>
           <p style="color: var(--text-muted); margin: 12px 0 20px; line-height: 1.8;">
-            Click below to copy our direct studio email or launch your mail client.
+            Press kit, review access, streaming, or you just want to talk about alien creatures. Tap to copy the address.
           </p>
-
           <a class="email-pill" href="mailto:blorkstudios@gmail.com" data-copy="blorkstudios@gmail.com" title="Click to copy email">
             <strong>blorkstudios@gmail.com</strong>
             <span>COPY / SEND ↗</span>
           </a>
-
-          <div style="margin-top: 30px; border-top: 1px solid var(--border-subtle); padding-top: 24px;">
-            <h4 style="margin-bottom: 8px;">Studio Location &amp; Origin</h4>
-            <p style="color: var(--text-muted); font-size: 0.95rem;">
-              Solo-developed by Philip Gonzales • Operating independently across North America.
-            </p>
-          </div>
         </div>
-
         <div class="contact-sidebar">
           <div class="sidebar-box">
-            <h4>Press &amp; Content Creators</h4>
-            <p>
-              Looking for high-resolution logos, key art, review keys, or interview requests for Art of War: Setting Sun?
-            </p>
-            <a class="btn btn-secondary" style="width: 100%; font-size: 0.72rem; padding: 12px;" href="mailto:blorkstudios@gmail.com?subject=Press%20Inquiry%20-%20Blork%20Studios">
-              REQUEST PRESS KIT →
-            </a>
-          </div>
-
-          <div class="sidebar-box">
-            <h4>Follow Our Broadcasts</h4>
-            <p>Follow along with weekly devlogs, screenshot drops, and build updates:</p>
+            <h4>Follow the broadcasts</h4>
+            <p>Devlogs, screenshot drops and build updates:</p>
             <div class="social-link-list">
-              <a class="social-link-item" href="https://x.com/blork" target="_blank" rel="noopener">
-                <span>X / Twitter</span>
-                <span>@blork ↗</span>
-              </a>
-              <a class="social-link-item" href="https://www.facebook.com/people/Blork-Studio" target="_blank" rel="noopener">
-                <span>Facebook</span>
-                <span>Blork Studio ↗</span>
-              </a>
-              <a class="social-link-item" href="https://www.linkedin.com/in/philip-gonzale" target="_blank" rel="noopener">
-                <span>LinkedIn</span>
-                <span>Philip Gonzalez ↗</span>
-              </a>
+              <a class="social-link-item" href="https://x.com/blork" target="_blank" rel="noopener"><span>X / Twitter</span><span>@blork ↗</span></a>
+              <a class="social-link-item" href="https://www.facebook.com/people/Blork-Studio" target="_blank" rel="noopener"><span>Facebook</span><span>Blork Studio ↗</span></a>
+              <a class="social-link-item" href="https://www.linkedin.com/in/philip-gonzale" target="_blank" rel="noopener"><span>LinkedIn</span><span>Philip Gonzalez ↗</span></a>
             </div>
           </div>
         </div>
@@ -564,7 +465,7 @@
     </section>
   </main>
 
-  <!-- Lightbox Modal for Screenshots -->
+  <!-- Lightbox -->
   <div class="lightbox" hidden aria-modal="true" role="dialog">
     <button class="lightbox-btn lightbox-close" aria-label="Close image">✕</button>
     <button class="lightbox-btn lightbox-prev" aria-label="Previous image">‹</button>
@@ -578,7 +479,7 @@
     </div>
   </div>
 
-  <!-- Site Footer -->
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="wrap footer-main">
       <div class="footer-bio">
@@ -592,20 +493,20 @@
         <p>Independent games. Unusual worlds.<br>Made with a little bit of random b******t.</p>
       </div>
       <div class="footer-column">
-        <h5>Galaxy &amp; Game</h5>
+        <h5>The Game</h5>
         <ul>
-          <li><a href="#the-game">Art of War: Setting Sun</a></li>
-          <li><a href="#screenshots">Screenshots Gallery</a></li>
-          <li><a href="#galaxy">The 17 Worlds</a></li>
-          <li><a href="#crew">Characters &amp; Masters</a></li>
+          <li><a href="#what-you-do">What you do</a></li>
+          <li><a href="#worlds">The worlds</a></li>
+          <li><a href="#screenshots">Screenshots</a></li>
+          <li><a href="games/art-of-war.html">Game page</a></li>
         </ul>
       </div>
       <div class="footer-column">
         <h5>Connect</h5>
         <ul>
+          <li><a href="https://blork-studios.itch.io/art-of-war-setting-sun" target="_blank" rel="noopener">itch.io ↗</a></li>
           <li><a href="https://x.com/blork" target="_blank" rel="noopener">X / Twitter ↗</a></li>
           <li><a href="https://www.facebook.com/people/Blork-Studio" target="_blank" rel="noopener">Facebook ↗</a></li>
-          <li><a href="https://www.linkedin.com/in/philip-gonzale" target="_blank" rel="noopener">LinkedIn ↗</a></li>
           <li><a href="mailto:blorkstudios@gmail.com">blorkstudios@gmail.com ↗</a></li>
         </ul>
       </div>
